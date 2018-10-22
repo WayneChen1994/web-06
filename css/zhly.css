@@ -379,5 +379,360 @@ ul,li{
 .hydt{
         width: 300px;
         height: 390px;
-        background: palegreen;
+}
+
+.tb9{
+        background: url("../img/zhly/css_sprites.png") no-repeat top -190px left -100px ;
+        margin-bottom: 20px;
+}
+
+.tb9 a{
+        text-decoration: none;
+        font-size: 12px;
+        color: gray;
+        float: right;
+        line-height: 30px;
+        margin-right: 10px;
+}
+
+.hydt ul{
+        width: 300px;
+        height: 330px;
+        padding-left: 20px;
+}
+
+.hydt ul li{
+        list-style: disc;
+        margin-bottom: 22px;
+}
+
+.hydt ul li a{
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+}
+
+.hydt ul li a:hover,.tb9 a:hover{
+        color: blue;
+}
+
+.morebox{
+        width: 100%;
+        height: 70px;
+        position: relative;
+}
+
+.morebox .morebutton{
+        width: 110px;
+        height: 30px;
+        background: white;
+        border: 2px solid dodgerblue;
+        border-radius: 25px;
+        position: absolute;
+        top: 30px;
+        left: 280px;
+        text-align: center;
+}
+
+.morebutton a{
+        text-decoration: none;
+        font-size: 14px;
+        color: dodgerblue;
+        line-height: 30px;
+        font-weight: bolder;
+}
+
+.morebutton a:hover{
+        font-size: 16px;
+}
+
+.ad{
+        width: 950px;
+        height: 80px;
+        margin: 0 auto;
+        padding-top: 5px;
+        position: relative;
+}
+
+.ad li .perad{
+        width: 120px;
+        height: 80px;
+}
+
+.ad li .perad{
+        float: left;
+        margin-right: 16px;
+        border: 1px solid gray;
+}
+
+.ad li .perad:last-child{
+        margin-right: 0;
+}
+
+.perad img{
+        display: block;
+        width: 100%;
+        height: 60px;
+}
+
+.perad p{
+        width: 100%;
+        height: 20px;
+        background: white;
+        text-align: center;
+}
+
+.perad p a{
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+        line-height: 20px;
+}
+
+.perad p a:hover{
+        color: blue;
+}
+
+.gg{
+        display: block;
+        text-align: center;
+        width: 30px;
+        height: 15px;
+        background: rgba(0,0,0,0.6);
+        color: white;
+        position: absolute;
+        font-size: 12px;
+        right: -10px;
+        bottom: -5px;
+        line-height: 15px;
+}
+
+.show{
+        width: 1000px;
+        height: 725px;
+        margin: 0 auto;
+        margin-top: 10px;
+}
+
+.xsmt{
+        height: 40px;
+        border-bottom: 5px solid gray;
+        padding-top: 5px;
+        padding-left: 5px;
+}
+
+.xsmt .xsmtimg{
+        width: 120px;
+        height: 30px;
+        background: url("../img/zhly/css_sprites.png") no-repeat top -252px right -20px;
+}
+
+.show .picwall{
+        width: 1000px;
+        height: 640px;
+        margin-top: 10px;
+}
+
+.picwall .leftwall{
+        width: 660px;
+        height: 100%;
+        float: left;
+}
+
+.picwall .rightwall{
+        width: 330px;
+        height: 100%;
+        float: right;
+}
+
+.leftwall img,.rightwall img{
+        display: block;
+}
+
+.leftwall img:first-child{
+        width: 100%;
+        height: 360px;
+        margin-bottom: 10px;
+}
+
+.leftwall img:nth-child(2){
+        float: left;
+}
+
+.leftwall img:last-child{
+        float: right;
+}
+
+.rightwall img{
+        margin-bottom: 10px;
+}
+
+.links{
+        width: 1000px;
+        height: 170px;
+        margin: 0 auto;
+}
+
+.linksbar{
+        width: 100%;
+        height: 40px;
+}
+
+.linksbar a{
+        text-decoration: none;
+        color: dodgerblue;
+        display: block;
+        float: left;
+        text-align: center;
+        width: 90px;
+        height: 40px;
+}
+
+.linksbar a:hover{
+        font-weight: bolder;
+}
+
+.linksbar a:first-child{
+        background: url("../img/zhly/css_sprites.png") no-repeat left -30px top -290px;
+        line-height: 55px;
+}
+
+.linksbar a:nth-child(2){
+        border-bottom: 2px solid deepskyblue;
+        line-height: 53px;
+}
+
+.linksbar div{
+        height: 40px;
+        width: 820px;
+        float: left;
+        border-bottom: 2px solid deepskyblue;
+}
+
+.links .linksbox{
+        width: 990px;
+        height: 110px;
+        margin-top: 15px;
+        padding-left: 10px;
+}
+
+.linksbox li{
+        float: left;
+        width: 20%;
+        height: 15%;
+}
+
+.linksbox li a{
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+}
+
+.linksbox li a:hover{
+        font-weight: bolder;
+        color: blue;
+}
+
+.footer{
+        width: 100%;
+        height: 200px;
+        background: whitesmoke;
+}
+
+.footer .fourpics{
+        width: 400px;
+        height: 70px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+}
+
+.fourpics div{
+        float: left;
+        margin-right: 70px;
+}
+
+.fourpics div:last-child{
+        margin-right: 0;
+}
+
+.weibo{
+        width: 50px;
+        height: 100%;
+        background: url("../img/zhly/css_sprites.png") no-repeat left -120px top -285px;
+        position: relative;
+}
+
+.weibo a{
+        text-decoration: none;
+        font-size: 12px;
+        color: gray;
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        left: 13px;
+}
+
+.email{
+        width: 45px;
+        height: 100%;
+        background: url("../img/zhly/css_sprites.png") no-repeat left -170px top -285px;
+        position: relative;
+}
+
+.email a{
+        width: 50px;
+        text-decoration: none;
+        font-size: 12px;
+        color: gray;
+        display: block;
+        position: absolute;
+        left: -3px;
+        bottom: -10px;
+}
+
+.wap{
+        width: 25px;
+        height: 100%;
+        background: url("../img/zhly/css_sprites.png") no-repeat right top -285px;
+        position: relative;
+}
+
+.wap a{
+        text-decoration: none;
+        color: gray;
+        display: block;
+        font-size: 12px;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+}
+
+.erweima{
+        width: 70px;
+        height: 70px;
+        background: url("../img/zhly/qrcode.png") no-repeat center center;
+}
+
+.footer p{
+        text-align: center;
+        font-size: 12px;
+        color: gray;
+        margin-bottom: 5px;
+}
+
+.footer p a{
+        text-decoration: none;
+        color: gray;
+        display: block;
+        float: left;
+        border-right: 1px solid gray;
+        padding: 0 10px;
+}
+
+.footer p a:last-child{
+        border-right: none;
+}
+
+.info{
+        padding-left: 300px;
 }
