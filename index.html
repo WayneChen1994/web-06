@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>index</title>
+        <script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+        <button onclick="huitui()">回退按钮</button>
+        <button ondblclick="forw()">下一页按钮</button>
+        <button onmouseover="go()">指定页按钮</button>
+
+        <script type="text/javascript">
+                function huitui(){
+                        window.history.back();
+                }
+                function forw(){
+                        window.history.forward();
+                }
+                function go(){
+                        window.history.go(1);
+                }
+        </script>
+</body>
+</html>

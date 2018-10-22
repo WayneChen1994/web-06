@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>Math对象</title>
+</head>
+<body>
+        
+        <script type="text/javascript">
+                // Math.abs()   取绝对值
+                console.log(Math.abs(-122));
+                // console.log(Math.abs(-1a2));  报错
+                
+                // Math.ceil()  向上取整
+                console.log(Math.ceil(12.3));
+                console.log(Math.ceil(12.8));
+                // Math.floor() 向下取整
+                console.log(Math.floor(12.3));
+                console.log(Math.floor(12.8));
+                
+                // Math.pow(x, y) 求x的y次方
+                console.log(Math.pow(2, 3));
+                // Math.sqrt()  求算术平方根
+                console.log(Math.sqrt(9));
+                
+                // 取一个[0,1)的浮点数
+                console.log(Math.random());
+                // 取一个1~100随机整数[1, 101)
+                console.log(Math.floor(Math.random()*100+1));
+                // 四舍五入取整
+                console.log(Math.round(12.5));
+                console.log(Math.round(12.1));
+                console.log(Math.round(12.8));
+                // 12.345 间接四舍五入保留小数点后两位
+                console.log(Math.round(12.345*100)/100);
+        </script>
+</body>
+</html>

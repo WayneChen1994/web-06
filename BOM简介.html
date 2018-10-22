@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>BOM简介</title>
+        <script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+        我们可以通过全局变量window来控制BOM操作。
+        window对象不需要我们手动创建。
+        在js中创建变量，若没有指明对象，则其默认绑定的对象就是window。
+------------------------------------------------------------------
+        ondblclick：双击事件
+        onclick：单击事件
+        onmouseover：鼠标经过事件
+-------------------------------------------------------------------
+        window.location.href    跳转到指定的页面
+        window.location.reload()        刷新页面
+        window.location.assign()        加载新的页面
+------------------------------------------------------------------
+        使用window.history的时候，必须保证已经产生了历史记录，才能进行上一页或者下一页。
+        window.history.back()：回退到上一个页面
+        window.history.forward()：跳转到下一个页面
+        window.history.go(num)：跳转到指定页面
+        num为正，则跳转到下num个页面；num为负，则跳转到上num个页面。
+-------------------------------------------------------------------
+        window.open("链接地址","打开方式","设置窗口大小及位置")
+        window.close()  关闭当前窗口
+-------------------------------------------------------------------
+        一般情况下，我们会使用window.onload作为程序入口。
+        window.onload是当页面中所有的数据，加载完毕之后，自动触发的事件。
+---------------------------------------------------------------------
+
+        <button onclick="tiaozhuan()">跳转按钮</button>
+        <button ondblclick="shuaxin()">刷新页面</button>
+        <button onmouseover="jiazai()">加载按钮</button>
+
+        <button onclick="huitui()">回退按钮</button>
+        <button ondblclick="forw()">下一页按钮</button>
+        <button onmouseover="go()">指定页按钮</button>
+        
+        <button onclick="openWin()">打开窗口</button>
+        <button onclick="closeWin()">关闭窗口</button>
+        
+        <script type="text/javascript">
+                function tiaozhuan(){
+                        // 跳转到指定的地址
+                        window.location.href = "https://www.baidu.com";
+                }
+                function shuaxin(){
+                        // 刷新页面
+                        window.location.reload();
+                }
+                function jiazai(){
+                        // 加载新的页面
+                        window.location.assign("zhly.html");
+                }
+                
+                function huitui(){
+                        // 回退到上一个页面
+                        window.history.back();
+                }
+                function forw(){
+                        // 跳转到下一个页面
+                        window.history.forward();
+                }
+                function go(){
+                        // 跳转到指定页
+                        window.history.go(1);
+                }
+                
+                function openWin(){
+                        // 打开新窗口
+                        window.open("label.html", "blank", "width=300px,height=300px");
+                }
+                function closeWin(){
+                        // 关闭当前窗口
+                        window.close();
+                }
+                
+                // 获取浏览器窗口的高度以及宽度
+                console.log(window.innerHeight);
+                console.log(window.innerWidth);
+                
+                var name = "lili";
+                console.log(window.name);
+                console.log(window.screen);
+        </script>
+</body>
+</html>

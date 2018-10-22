@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>date对象</title>
+</head>
+<body>
+
+        1.创建时间对象
+        var date = new Date();
+        
+        2.获取年月日，时分秒
+        date.getFullYear()
+        date.getMonth() + 1
+        date.getDate()
+        
+        date.getHours()
+        date.getMinutes()
+        date.getSeconds()
+        
+        3.获取时间戳
+        date.getTime()
+
+        <script type="text/javascript">
+                var date = new Date();
+                console.log(date);
+                // 返回的是一个date对象
+                console.log(typeof date);
+                
+                // 获取年
+                console.log(date.getFullYear());
+                // 获取月，需要加1处理（0~11）
+                console.log(date.getMonth());
+                // 获取日
+                console.log(date.getDate());
+                // 获取星期几：星期日～星期六：0~6
+                console.log(date.getDay());
+                
+                // 获取时
+                console.log(date.getHours());
+                // 获取分
+                console.log(date.getMinutes());
+                // 获取秒
+                console.log(date.getSeconds());
+                
+                // 获取时间戳
+                console.log(date.getTime());
+                // 获取本地时间字符串
+                console.log(date.toLocaleString());
+        </script>
+</body>
+</html>

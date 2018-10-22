@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>object对象</title>
+</head>
+<body>
+
+        字面量的形式来创建对象：
+        var 变量名 = {
+                属性名1:属性值1，
+                属性名2:属性值2，
+                ……,
+                函数名1:function(参数列表){
+                        函数体;
+                },
+                函数名2:function(参数列表){
+                        函数体;
+                },
+                ……
+        }
+-------------------------------------------------------------------
+        对象属性的调用：
+        对象.属性
+        对象['属性名']
+        
+        对象函数的调用：
+        对象.函数名(参数列表)
+-------------------------------------------------------------------
+
+        <script type="text/javascript">
+                var person = {
+                        name: "lili",
+                        age: 18,
+                        sex: "girl",
+                        say: function() {
+                                alert("say hello");
+                        },
+                        eat: function(){
+                                alert("吃饭...");
+                        }
+                }
+                
+                alert(person.name);
+                alert(person['name']);
+                person.say();
+        </script>
+</body>
+</html>

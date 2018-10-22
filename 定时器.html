@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>定时器</title>
+</head>
+<body>
+
+        定时器：
+--------------------------------------------------------------------
+        1、间歇性定时器
+        setInterval(func, delay)
+        参数一：要执行的函数
+        参数二：延迟时间，单位ms   1000ms = 1s
+-------------------------------------------------------------------
+        2、延迟定时器
+        setTimeOut(func,delay)
+        参数一：要执行的函数
+        参数二：延迟时间
+        注意：只执行一次
+--------------------------------------------------------------------
+
+        <h1 id="times"></h1>
+        <button onclick="stop()">取消定时器</button>
+        <button onclick="clears()">清除延时定时器</button>
+        
+        <script type="text/javascript">
+                var timer = setInterval(function () {
+                        var date = new Date();
+                        document.getElementById("times").innerHTML = date.toLocaleString();
+                },1000);
+                
+                function stop() {
+                        // 清除定时器
+                        clearInterval(timer);
+                }
+                
+                var timeout = setTimeout(function () {
+                        alert("迎娶白富美，走上人生巅峰！！！！");
+                },5000);
+                
+                function clears() {
+                        clearTimeout(timeout);
+                }
+        </script>
+</body>
+</html>
