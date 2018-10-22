@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>常用的对象</title>
+</head>
+<body>
+
+        1.string对象
+        由若干个字符组成，使用双引号或是单引号来表示。
+        创建对象
+        方式1：
+        var str1 = "hello";
+        方式2：
+        var str2 = new String("hello");
+        方式3：
+        var str3 = String("hello");
+------------------------------------------------------------------
+        2.获取字符串长度
+        str.length
+------------------------------------------------------------------
+        3.字符串拼接
+        方式1，使用“+”拼接
+        方式2，str1.concat(str2)
+------------------------------------------------------------------
+        4.获取指定位置上的字符
+        str.charAt(index)    获取指定下标的字符，获取不到返回空串
+        str[index]      使用下标获取，获取不到返回undefined
+------------------------------------------------------------------
+        5.判断子串是否存在于原字符串，若存在则返回第一次匹配的下标值，则不存在则返回-1。
+str.indexOf('')
+------------------------------------------------------------------
+        6.str.split(" ")
+        以指定的字符串切割原字符串，返回一个数组。
+------------------------------------------------------------------
+        7.str.replace(old, new)
+        功能：使用新字符串，替换旧字符串并且返回替换后的字符串。
+------------------------------------------------------------------
+        
+        <script type="text/javascript">
+                var str = "hello world";
+                var str1 = "world";
+                var str2 = '<img src="';
+                var str3 = '" />';
+                var str4 = 'hello';
+                var a = 50;
+                console.log(str[1]);
+                console.log(str[20]);
+                console.log(str.charAt(20));
+                console.log(str.replace('hello', 'good'));
+                console.log(str.split(" "))
+                console.log(str.indexOf('he'));
+                console.log(str.charAt(0));
+                // console.log(str.charAt(-1));
+                console.log(str.charAt(str.length-1));
+                console.log(typeof (50+""));
+                console.log(str + str1);
+                console.log("lili"+str);
+                console.log(str.length);
+                console.log("===========")
+                console.log(str.concat(str1));
+                console.log(str2.concat(str4).concat(str3));
+                
+                // html样式函数
+                // bold() 字符串加粗
+                // fontcolor() 设置字体颜色
+                // fontsize() 设置字体大小
+                // link() 将字符串设置为超链接
+                document.write(str.bold().fontcolor("red").fontsize(24).link("https://www.baidu.com"));
+        </script>
+</body>
+</html>

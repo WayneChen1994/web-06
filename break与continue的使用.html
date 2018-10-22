@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>break与continue的使用</title>
+</head>
+<body>
+        break：直接结束当前循环或者是跳出分支语句switch语句。
+        
+        continue：结束当前这次循环继续下一次循环。
+        
+        当出现循环嵌套的时候，特别是层级比较多的时候，我们可以给每个循环设置一个标签，然后通过 break 标签名; 来跳出指定的循环。
+        
+        loop1:
+        for(){
+                // 循环1
+                loop2:
+                for (){
+                        // 循环2
+                        loop3:
+                        for (){
+                                //循环3
+                                break loop1;    // 直接跳出所有的循环
+                        }
+                }
+        }
+        
+        <script type="text/javascript">
+                for (var i=0;i<100;i++){
+                        if (i==50){
+                                continue;
+                        }
+                        console.log(i);
+                }
+                
+                var num = 5;
+                switch (num) {
+                        case 1:
+                                console.log(1);
+                        case 5:
+                                console.log(5);
+                        case 2:
+                                console.log(2);
+                                break;
+                        case 3:
+                                console.log(3);
+                }
+        </script>
+</body>
+</html>

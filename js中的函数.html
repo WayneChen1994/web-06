@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>js中的函数</title>
+        <script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+        
+        js中的函数
+        基本函数[小驼峰式命名]：
+        function 函数名(参数列表){
+                函数体;
+                return 表达式;     // 可有可无
+        }
+        
+        匿名函数
+        var 变量名 = function(参数列表){
+                函数体;
+                return 表达式;     // 可有可无
+        }
+        
+------------------------------------------------------------------
+        
+        全局变量与局部变量：
+        局部变量：定义在函数中的变量只能在当前函数中使用。
+        全局变量：在script中或者js文件中并且在函数体之外定义的变量，我们在整个html中所有的js文件或者script标签中都可以使用。
+        【注意定义的位置或者链接的位置】
+        
+        <script type="text/javascript">
+                // 1!+2!+……+n!，定义一个函数完成这个功能
+                function jiecheng(n) {
+                       var sum = 0;
+                       var res = 1;
+                        for (var i=1;i<=n;i++) {
+                                res *= i;
+                                sum += res;
+                        }
+                        return sum;
+                }
+                alert(jiecheng((5)));
+                alert(num);
+        </script>
+</body>
+</html>
