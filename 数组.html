@@ -82,6 +82,25 @@
                 
                 console.log(arr.concat(arr3));
                 // console.log(arr+arr3);
+                
+                // 函数功能，对数组中的数据进行冒泡排序[升序]
+                function buddleSort(arr) {
+                        var len = arr.length;
+                        // 代表比较的轮数
+                        for(var i=0;i<len-1;i++){
+                                // 代表每轮比较的次数
+                                for (var j=0;j<len-1-i;j++){
+                                        if (arr[j]>arr[j+1]){
+                                               var temp = arr[j];
+                                               arr[j] = arr[j+1];
+                                               arr[j+1] = temp;
+                                        }
+                                }
+                        }
+                        return arr;
+                }
+                arr1 = [1, 23, 45, 67, 34, 58];
+                console.log(buddleSort(arr1));
         </script>
 </body>
 </html>
